@@ -1,3 +1,4 @@
+#my solution
 def zero(func=None):
     if func is None:
         return 0
