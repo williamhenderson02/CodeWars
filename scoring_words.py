@@ -1,5 +1,5 @@
-#my solution
-def high(x):
+#my solution 
+"""def high(x):
 
     highest = ''
 
@@ -17,6 +17,17 @@ def high(x):
                 maxi = total
 
     return highest
+
+x = 'what time are we climbing up the volcano'
+
+highest = high(x)
+
+print(highest)"""
+
+#best solution
+def high(x):
+    return max(x.split(), key=lambda k: sum(ord(c) - 96 for c in k))
+
 
 x = 'what time are we climbing up the volcano'
 
